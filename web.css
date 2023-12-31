@@ -1,0 +1,218 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family:Poppins;
+	overflow:hidden;
+}
+
+body{
+	background-image: url("background-image.png");
+	background-size: cover;     /**it is mandatory**/
+    margin: 20px 0;
+
+}
+
+.navbar{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 110px;
+}
+
+.navbar ul{
+	list-style: none;
+    display: flex;
+    text-transform: uppercase;
+    
+}
+.navbar ul li{
+	margin-left: 15px;
+}
+.nav3 img{
+	height:23px;
+	width: 23px;
+	margin-right: 4px;
+}
+.nav3 span{
+	display: inline-block;
+}
+
+.nav3 button{
+	background-color: deeppink;
+	color: white;
+	border: none;
+	padding: 5px 8px;
+	border-radius: 3px;
+    cursor: pointer;
+	font-weight: 600;
+}
+
+
+.main{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	margin-top: -50px;
+	
+}
+
+/**************     main left   **************************/
+
+
+.left{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	padding-left: 110px;
+	margin-top: 100px;
+}
+.left h1{
+	text-transform: capitalize;
+	font-size: 3.2rem;
+	margin-bottom: 12px;
+}
+
+.left p{
+	color: #9b9797;
+	font-size: 1.1rem;
+	text-align: justify;
+	margin-bottom: 18px;
+}
+.left .btn1{
+	background-color: deeppink;
+	color: white;
+	border: none;
+	padding: 7px 14px;
+	border-radius: 3px;
+    cursor: pointer;
+}
+
+.left .btn2{
+	background-color: white;
+	color: #f7acb9;
+	padding: 7px 14px;
+	font-weight: 600;
+	border: 1.5px solid #f7acb9;
+	border-radius: 4px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.left h1 + div{
+	margin-bottom: 100px;
+}
+.left img{
+	height: 20px;
+	width: 20px;
+	margin-left: 7px;
+}
+
+.icon span{
+	display: inline-block;
+	margin-left: 7px;
+	color: #9b9797;
+
+}
+
+
+/************************* right  ****************************/
+.right{
+	position: relative;
+
+}
+.right .img{
+	margin-left: 80px;
+	width: 90%;
+  
+}
+.right .btn{
+    height: 40px;
+    width: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color:  #9b9797;
+    border-radius: 40px;
+    box-shadow: 0 0px 10px #797272;
+
+}
+.right .btn1{
+	position: absolute;
+	top: 40px;
+	left: 185px;	 
+}
+.right .btn img{
+	height: 20px;
+	width: 20px;
+}
+.right .btn span{
+	display: inline-block;
+   font-size: 0.85rem;
+}
+
+.right .btn2{
+	position: absolute;
+	right: 120px;
+	top:160px;
+	width: 120px;
+}
+
+/********************responsive ***************************/
+
+@media screen and (max-width:1000px){
+
+	*{
+		overflow-x:hidden;
+		overflow-y:auto;
+	}
+	body{
+		
+	}
+	.main{
+		display: grid;
+		grid-template-columns: repeat(1, 1fr);
+	}
+	.navbar ul{
+    display: none;
+    margin-right: 0;
+    }
+    .navbar{
+	display: flex;
+	justify-content: space-between;
+	padding: 0 40px;
+}
+.left{
+	padding:0 40px;
+	margin-top:50px;
+	text-align: center;
+
+}
+.left h1{
+	font-size: 2.3rem;
+}
+.left p{
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+.left h1 + div{
+	margin-bottom: 60px;
+}
+.right{
+	margin-top: 40px;
+	vertical-align: middle;
+}
+.right .img{
+	margin-left: 40px;
+}
+
+.right .btn1{
+	top: 20px;
+	left: 40px;	 
+}
+.right .btn2{
+	top: 20px;
+	right:40px;	 
+}
+
+
+}
